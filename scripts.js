@@ -19,7 +19,7 @@ let procesamiento = (info) => {
 };
 
 let cargarCiudad = (city) => {
-	$.getJSON(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=sp&appid=26e9ba6ba308d83d172cb1f150e3aba7`, (info) => {
+	$.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=sp&appid=26e9ba6ba308d83d172cb1f150e3aba7`, (info) => {
 		procesamiento(info)
 	}).fail(()=>{
 		alert('No se encontró el lugar ingresado.')
